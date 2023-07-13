@@ -1,0 +1,36 @@
+<div>
+    <div class="table-container">
+    <table>
+        <thead>
+			<tr>
+				<th>Name</th>
+				<th>Year</th>
+				<th>Value</th>
+			</tr>
+		</thead>
+        <tbody>
+        <% viewData.forEach((element)=> {  %>
+            <tr>
+				<td> <%= element._source.name %></td>
+				<td> <%= element._source.year %></td>
+				<td> <%= element._source.value_$ %></td>
+			</tr>
+      <%  }) %>
+       	
+			
+		</tbody>
+    </table>
+</div>
+ <div id="dataDiv" style="display:none" >
+  <%-JSON.stringify(viewData)%>
+ </div>
+ <div id="query" style="display: none;">
+  <%-JSON.stringify(query) %>
+ </div>
+ <button id="showChart" > show chart </button>
+ <br>
+  <canvas id="myChart"></canvas>
+ <div>
+  <a class="nav-link" href="./">BACK</a>
+ </div>
+</div>

@@ -1,0 +1,50 @@
+
+<div class="container">
+    <h2 >
+     Elasticsearch 
+    </h2>
+    <p>
+       " Elasticsearch is a search engine based on the Lucene library. It provides a distributed, multitenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents.""
+    </p>
+    <h3>
+        Search with  Elasticsearch in  table (tourism)  
+    </h3>
+   
+    <ul> 
+        <li class="nav-item">
+            Show result of income from the tourism for all the years (that can take a time )....
+            <br>
+            <a class="nav-link" href="./search/">  Show result for all data </a>
+          </li>
+        <li class="nav-item">
+            Show result of income from the tourism between 1999 and 2000 year
+            <br>  
+    
+           
+          <a class="nav-link" href="./search?from=1999&to=2002"> Show Result (1999-2002)</a>
+        </li>
+        <li class="nav-item">
+            Show result of income from the tourism for one country
+            <br>
+            <br>
+            <label for="mySelect">Select a country:</label>
+             <br>
+            <select id="mySelect" name="country" style="width: 200px; height: 100px; color: blue;" multiple>
+              <option value="Argentina" selected>Argentina</option>
+              <option value="Albania" >Albania</option>
+              <option value="Armenia" >Armenia</option>
+              <option value="China" >China</option>
+              <option value="Sweden" >Sweden</option>
+              <option value="Syrian" >Syrian</option>
+              <option value="Malaysia">Malaysia</option>
+              <option value="Qatar">Qatar</option>
+            </select>
+            <br>
+          <a id="country" "nav-link" href="./search?name=Argentina"> Show Result </a>
+        </li>
+        
+      </ul>
+    
+  
+  
+</div>
